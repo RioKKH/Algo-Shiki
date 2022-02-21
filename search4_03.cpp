@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-O)~|+bool check_palindrome(int);
+bool check_palindrome(int);
 
 int main()
 {
@@ -28,9 +28,9 @@ bool check_palindrome(int i)
 	N = S.size();
 
 	bool flag = true;
-	if (int i=0; i<N; i++)
+	for (int j=0; j<N; j++)
 	{
-		if (S[i] != S[(N-1)-i])
+		if (S[j] != S[(N-1)-j])
 		{
 			flag = false;
 		}

@@ -1,0 +1,39 @@
+#include <iostream>                             
+#include <vector>
+using namespace std;
+
+/**
+ * @brief 異なる配列に対して同時にループを回す方法
+ */
+int main()
+{
+	int N, M;
+	cin >> N >> M;
+
+	vector<int> A(N);
+	for (int i=0; i<N; i++)
+	{
+		cin >> A[i];
+	}
+	
+	vector<int> B(M);
+	for (int i=0; i<M; i++)
+	{
+		cin >> B[i];
+	}
+
+	int counter = 0;
+
+	for (const auto& a : A)
+	{
+		for (const auto& b : B)
+		{
+			if (a == b)
+			{
+				counter++;
+			}
+		}
+	}
+	cout << counter << endl;
+	return 0;
+}

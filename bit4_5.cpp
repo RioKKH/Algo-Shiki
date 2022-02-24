@@ -3,10 +3,11 @@ using namespace std;
 
 int main()
 {
-	int N, M;
-	cin >> N >> M;
+	int N;
+	cin >> N;
 
-	int ans = N >> M;
+	int ans = N << 1;
 	cout << ans << endl;
+
 	return 0;
 }
